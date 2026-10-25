@@ -1,0 +1,19 @@
+# Python environment built by `uv sync`; anyone can rebuild it from uv.lock
+.venv/
+
+# Python's cache of compiled files
+__pycache__/
+
+# Jupyter's autosaved copies of each notebook
+.ipynb_checkpoints/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Files your notebook writes, rebuilt each time it runs
+output/
+
+# Claude Code's record of the permissions you granted on this laptop
+.claude/settings.local.json
