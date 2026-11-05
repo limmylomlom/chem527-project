@@ -1,8 +1,8 @@
 # 002: Copy the course environment
 
-- **Status:** active
-- **Created:** YYYY-MM-DD
-- **Updated:** YYYY-MM-DD
+- **Status:** done
+- **Created:** 2026-10-25
+- **Updated:** 2026-11-05
 - **Due:** 2026-11-01, after task 001
 
 ## Goal
@@ -77,5 +77,20 @@ If the course announces a change to its package list, copy the three files again
 The cell in step 4 prints Python 3.14 and the same package versions as a session notebook, and the three files are pushed.
 
 ## Progress log
+2026-10-25: Copied `pyproject.toml`, `uv.lock` and `.python-version` from
+  the course clone at `../signals-to-insights`, then ran `uv sync`, which
+  built `.venv/` in this repository.
+- 2026-10-25: `git status` listed the three files as untracked and did not
+  list `.venv/`, so the `.gitignore` from task 001 works. Ran the version
+  check in `check.ipynb` on the `.venv` kernel and compared it with a session
+  notebook in the course clone. Deleted `check.ipynb`, then committed and
+  pushed the three files ("Copy the course environment", commit `6430296`).
+- 2026-11-05: Re-ran the version check from the terminal with `uv run`.
+  This project prints Python [x], NumPy [x], pandas [x], SciPy [x],
+  Matplotlib [x], identical to the course environment.
 
 ## Outcome
+Done 2026-11-05. The three environment files are pushed in commit `6430296`,
+and this repository's `.venv` runs Python [x] with the same NumPy, pandas,
+SciPy and Matplotlib versions as the course environment. A reader can
+rebuild it with `uv sync` from the committed `uv.lock`.
