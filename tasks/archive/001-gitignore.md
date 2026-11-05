@@ -1,8 +1,8 @@
 # 001: Write `.gitignore`
 
-- **Status:** active
-- **Created:** YYYY-MM-DD
-- **Updated:** YYYY-MM-DD
+- **Status:** done
+- **Created:** 2026-10-25
+- **Updated:** 2026-11-05
 - **Due:** 2026-11-01, before task 002
 
 ## Goal
@@ -65,5 +65,18 @@ If your data cannot be stored on GitHub, because they are too large or their lic
 `.gitignore` is pushed, and after `uv sync` in task 002, `git status` does not list `.venv/`. Close this task then.
 
 ## Progress log
-
+- 2026-10-25: Created `.gitignore` in the top folder from VS Code. Pasted in the template's lines: `.venv/`, `__pycache__/`, `.ipynb_checkpoints/`, `.DS_Store`,
+  `Thumbs.db`, `desktop.ini`, `output/`, and `.claude/settings.local.json`.
+- 2026-10-25: Committed with message "Add .gitignore" and pushed, , before
+  anything else was added to the repository (commit `985836b`).
+- 2026-11-05: After `uv sync` in task 002 built `.venv/`, ran `git status`:
+  "nothing to commit, working tree clean", with `.venv/` not listed, so the
+  ignore rule works. Checked that `.gitignore` does not exclude `data/`,
+  `AGENTS.md`, `judgment-log.md`, `tasks/` or `.claude/skills/`. This matters
+  for this project because the six NIR image files (`.mat`, 81.4 MB or less
+  each) must be committed in `data/`; each is under GitHub's 100 MB limit,
+  so no exemption is needed.
 ## Outcome
+Done 2026-11-05. 'git.ignore' was pushed in commit '[hash]' before any other files. With `.venv/` built, `git status` does not list it, which meets the
+"Done when" condition. Nothing the final submission needs is ignored, and
+the `.mat` data files will commit normally.
