@@ -1,8 +1,8 @@
 # 003: Topic declaration
 
-- **Status:** active
+- **Status:** done
 - **Created:** 2026-10-25
-- **Updated:** 2026-11-05
+- **Updated:** 2026-11-08
 - **Due:** 2026-11-08, 11:59 pm
 
 ## Goal
@@ -57,5 +57,11 @@ git rev-parse HEAD
 The Canvas entry is in. Close this task after it is, with the URL you submitted in **Outcome**, and commit and push the closed task. Your mentor reads the repository at the commit you submitted, so later commits do not change what is scored.
 
 ## Progress log
+- 2026-11-05: Chose the coffee ATR-FTIR dataset (Mendeley Data, Version 5, CC BY 4.0) over a melamine-in-gluten dataset that had no stated license.
+- 2026-11-05: Checked the data: 100 spectra = 50 lots x 2 stages (Green, Roasted), with 25 defect-free and 25 defective lots per stage. Defective and defect-free beans come from different lots.
+- 2026-11-08: Copied the files into `data/` unchanged. Made `topic.ipynb`, which loads `data/Dataset_Raw.xlsx`: 100 rows, 900 wavenumbers (648.56 to 3999.43 cm⁻¹), absorbance from -0.013 to 0.41.
+- 2026-11-08: Wrote `proposal.md` (comparison approach) and filled in `AGENTS.md`. Committed and pushed as "Topic declaration".
 
 ## Outcome
+Done 2026-11-08
+https://github.com/limmylomlom/chem527-project/commit/e4d3a9c36a863e59cb502e3601b4d8ed4b96fb46
