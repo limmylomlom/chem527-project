@@ -29,5 +29,8 @@ When the student asks for a plan, give it in words and write no code until the s
 The student replaces the three lines below and adds a line each time they correct the assistant on the same point twice.
 
 - Question: (one sentence)
+Can ATR-FTIR spectra distinguish between defective and defect-free coffee lots, and does that capability persist for roasted coffee?
 - Data: (the file in `data/`, what one row is, and its source URL and access date)
+'Dataset_Raw.xlsx'; one row is one coffee lot at one processing stage (green / roasted), averaged over 3 scans; 100 rows = 50 lots * 2 stages, grouped by 'Coffee Lot ID'. Source: https://doi.org/10.17632/dtd2fggpyp.5, accessed 2026-11-05.
 - Measured variable: (its column name and unit)
+Measured variable: absorbance (AU, unitless), in the 900 columns whose names are wavenumbers in cm⁻¹ (648.556784 to 3999.433499); values range from about -0.01 to 0.41.
