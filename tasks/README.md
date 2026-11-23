@@ -26,7 +26,8 @@ Newest first. Change the link to `archive/NNN-slug.md` when a task moves.
 
 | Number | Task | Status | Due |
 |---|---|---|---|
-| 005 | [Two-tailed test](archive/005-two-tailed test.md) | done | 2026-11-08 |
+| 006 | [Normality-check](006-normality-check.md) | active | 2026-12-09 |
+| 005 | [Two-tailed test](archive/005-two-tailed-test.md) | done | 2026-11-22 |
 | 004 | [Preprocessing](archive/004-preprocessing.md) | done | 2026-11-22 |
 | 003 | [Topic declaration](archive/003-topic-declaration.md) | done | 2026-11-08 |
 | 002 | [Copy the course environment](archive/002-environment.md) | done | 2026-11-01 |

@@ -34,3 +34,7 @@ Can ATR-FTIR spectra distinguish between defective and defect-free coffee lots, 
 'Dataset_Raw.xlsx'; one row is one coffee lot at one processing stage (green / roasted), averaged over 3 scans; 100 rows = 50 lots * 2 stages, grouped by 'Coffee Lot ID'. Source: https://doi.org/10.17632/dtd2fggpyp.5, accessed 2026-11-05.
 - Measured variable: (its column name and unit)
 Measured variable: absorbance (AU, unitless), in the 900 columns whose names are wavenumbers in cm⁻¹ (648.556784 to 3999.433499); values range from about -0.01 to 0.41.
+- Sample form
+The beans are whole, not ground, so the ATR measures only the outer surface of each bean, the few micrometers the evanescent wave reaches. Spectra differ between lots mostly through varied contact pressure with the crystal, not necessarily particle size. 
+- Sample structure
+Defective and defect-free beans come from different lots, so comparisons between classes use independent groups. Green and roasted rows from the same lot ar epaired by Coffee Lot ID
